@@ -76,8 +76,13 @@ FEniCS では、**ベクトル同士の要素ごとの積（Hadamard 積）を�
 要素ごとの積（Hadamard 積）は次のように表されます：
 
 $$
-\vec{v} \circ \vec{w} = \begin{bmatrix} v_1 w_1 
-\\ v_2 w_2 \\ \vdots \\ v_n w_n \end{bmatrix}
+\vec{v} \circ \vec{w} =
+\begin{bmatrix}
+v_1 w_1 \\
+v_2 w_2 \\
+\vdots \\
+v_n w_n
+\end{bmatrix}
 $$
 
 
