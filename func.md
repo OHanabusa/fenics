@@ -1,6 +1,6 @@
 # FEniCS における計算式と得られる形状
 
-## **1. スカラー (`a`), ベクトル ($\vec{v}$), 行列 (`\boldsymbol{M}`) の定義**
+## **1. スカラー (`a`), ベクトル (`\vec{v}`), 行列 (`\boldsymbol{M}`) の定義**
 - **スカラー**: $a, b, c$  （例: `Constant(1.0)`, `FunctionSpace` 内の `Function`）
 - **ベクトル**: $\vec{v}, \vec{w}$  （例: `VectorFunctionSpace` の `Function`）
 - **行列**: $\boldsymbol{M}, \boldsymbol{K}$  （例: `assemble()` で生成された `PETScMatrix`）
@@ -23,7 +23,7 @@
 | `M * M` | $\boldsymbol{M} \boldsymbol{M}$ | **行列** | 行列同士の積 |
 | `v^T * M` | $\vec{v}^T \boldsymbol{M}$ | **ベクトル** | ベクトルの転置と行列の積 |
 | `v^T * w` | $\vec{v}^T \vec{w}$ | **スカラー** | ベクトルの転置とベクトルの積 |
-| $\text{inv}(M)$ | $\boldsymbol{M}^{-1}$ | **行列** | 行列の逆行列（`solve()` で解く） |
+| `\text{inv}(M)` | $\boldsymbol{M}^{-1}$ | **行列** | 行列の逆行列（`solve()` で解く） |
 | `\text{tr}(M)` | $\text{tr}(\boldsymbol{M})$ | **スカラー** | 行列のトレース |
 | `\text{det}(M)` | $\det(\boldsymbol{M})$ | **スカラー** | 行列の行列式 |
 | `\text{norm}(v, "l2")` | $\|\vec{v}\|_2$ | **スカラー** | ベクトルの L2 ノルム |
