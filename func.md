@@ -77,6 +77,7 @@ FEniCS では、**ベクトル同士の要素ごとの積（Hadamard 積）を�
 
 $\vec{v} \circ \vec{w} = \begin{bmatrix} v_1 w_1 \\ v_2 w_2 \\ \vdots \\ v_n w_n \end{bmatrix}$
 
+
 ここで、**各成分が対応する位置のベクトル要素の積** になっています。
 ```
  v.vector().get_local() * w.vector().get_local()
