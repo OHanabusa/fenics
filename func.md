@@ -1,6 +1,6 @@
 # FEniCS における計算式と得られる形状
 
-## **1. スカラー (`a`), ベクトル (`$\vec{v}$`), 行列 (`\boldsymbol{M}`) の定義**
+## **1. スカラー (`a`), ベクトル ($\vec{v}$), 行列 (`\boldsymbol{M}`) の定義**
 - **スカラー**: $a, b, c$  （例: `Constant(1.0)`, `FunctionSpace` 内の `Function`）
 - **ベクトル**: $\vec{v}, \vec{w}$  （例: `VectorFunctionSpace` の `Function`）
 - **行列**: $\boldsymbol{M}, \boldsymbol{K}$  （例: `assemble()` で生成された `PETScMatrix`）
